@@ -17,7 +17,7 @@
         height: 100vh; 
         justify-content: center;
         flex-direction: column;
-        text-align: center;
+        align-items: center;
       }
       .logo {
         text-align: center;
@@ -32,22 +32,24 @@
         padding: 10px 0;
         line-height: 48px;
         text-align: center;
+        text-decoration: none;
+        color: #b4b9e8;
       }
+
       .social__icon {
         opacity: .5;
         height: 48px;
         margin-right: 10px;
         vertical-align: top;
       }
+
       .social__title {
         font-size: 32px;
         font-weight: 200;
+        
       }
-      .social__title a {
-        color: #b4b9e8;
-        text-decoration: none;
-      }
-      .social_title:hover a {
+  
+      .social:hover {
         color: red;
       }
 
@@ -62,12 +64,13 @@
           <img src="logo.png" alt="JS Weekdays"/>
         </picture>
       </div>
-      <div class="social">
+
+      <a href="tg://resolve?domain=jsweekdays" class="social">
         <img class="social__icon" src="telegram.png" alt="telegram"/>
         <span class="social__title">
-          <a href="tg://resolve?domain=jsweekdays">@jsweekdays</a>
-        </span>
-      </div> 
+            @jsweekdays
+        </span>   
+      </a>
     </div>
   </body>
 </html>
