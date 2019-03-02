@@ -5,6 +5,7 @@
   --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
   --color-base: #ffffff;
+  --color-link: #b4b9e8;
   --bg-base: #3e4b91;
 }
 
@@ -40,6 +41,8 @@ body {
 .social {
   padding: 10px 0;
   line-height: 48px;
+  color: var(--color-link);
+  text-decoration: none;
   text-align: center;
 }
 .social__icon {
@@ -52,10 +55,7 @@ body {
   font-size: 32px;
   font-weight: 200;
 }
-.social__title a {
-  color: #b4b9e8;
-  text-decoration: none;
-}
-.social_title:hover a {
+
+.social__title:hover {
   color: red;
 }
