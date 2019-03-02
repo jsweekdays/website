@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>JS Weekdays!</title>
     <meta name="description" content="Периодические неформальные встречи любителей Javascript в Ростов-на-Дону.">
     <style>
@@ -22,9 +21,12 @@
       }
       .logo {
         text-align: center;
+        max-width: 360px;
+        margin: 0 auto;
       }
       .logo img {
-        width: 360px;
+        max-width: 100%;
+        height: auto;
       }
       .social {
         padding: 10px 0;
@@ -54,7 +56,11 @@
   <body>
     <div class="container">
       <div class="logo">
-        <img src="./logo.png" alt="JS Weekdays"/>
+        <picture>
+          <source type="image/webp" srcset="logo.webp">
+          <source type="image/png" srcset="logo.png">
+          <img src="logo.png" alt="JS Weekdays"/>
+        </picture>
       </div>
       <div class="social">
         <img class="social__icon" src="telegram.png" alt="telegram"/>
