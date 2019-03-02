@@ -6,27 +6,61 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>JS Weekdays!</title>
     <style type="text/css">
+      html, body {
+        min-height: 100%;
+      }
       body {
         background: #3e4b91;
       }
-      h2 {
-        color: #eee;
+      .container {
+        display: flex;
+        height: 100vh; 
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
       }
-      a {
+      .logo {
+        text-align: center;
+      }
+      .logo img {
+        width: 360px;
+      }
+      .social {
+        padding: 10px 0;
+        line-height: 48px;
+        text-align: center;
+      }
+      .social__icon {
+        opacity: .5;
+        height: 48px;
+        margin-right: 10px;
+        vertical-align: top;
+      }
+      .social__title {
+        font-size: 32px;
+        font-weight: 200;
+      }
+      .social__title a {
         color: #b4b9e8;
-        text-decoration: underline;
+        text-decoration: none;
       }
-      a:hover {
-        color: #e4e5f6;
+      .social_title:hover a {
+        color: red;
       }
+
     </style>
   </head>
   <body>
-    <div class="py-5 text-center">
-      <h2>In JavaScript we trust!</h2>
-      <p class="lead">
-        <a href="https://t.me/jsweekdays">t.me/jsweekdays</a>
-      </p> 
+    <div class="container">
+      <div class="logo">
+        <img src="./logo.png" />
+      </div>
+      <div class="social">
+        <img class="social__icon" src="./telegramm.png" />
+        <span class="social__title">
+          <a href="https://t.me/jsweekdays">@jsweekdays</a>
+        </span>
+      </div> 
     </div>
   </body>
 </html>
