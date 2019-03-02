@@ -21,7 +21,7 @@ body {
   line-height: var(--line-height-base);
   font-weight: var(--font-weight--base);
   color: var(--color-base);
-  background: var(--bg-base);
+  background-color: var(--bg-base);
 }
 .container {
   display: flex;
