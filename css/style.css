@@ -60,3 +60,7 @@ body {
 .social__title:hover {
   color: #fedc66;
 }
+
+#message {
+  font-size:23px;
+}
